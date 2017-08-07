@@ -1,0 +1,854 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C538279A195076F200B9C33 /* Pods_ReduxTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88E0D8594B741FB6252AD637 /* Pods_ReduxTestUITests.framework */; };
+		4CD065C884315F1438DED392 /* Pods_ReduxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA135DCFAE68662DE2BEA0F /* Pods_ReduxTest.framework */; };
+		BDF7A8991F33A17E00B34797 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF7A8981F33A17E00B34797 /* AppDelegate.swift */; };
+		BDF7A89B1F33A17E00B34797 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF7A89A1F33A17E00B34797 /* ViewController.swift */; };
+		BDF7A89E1F33A17F00B34797 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDF7A89C1F33A17F00B34797 /* Main.storyboard */; };
+		BDF7A8A11F33A17F00B34797 /* ReduxTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDF7A89F1F33A17F00B34797 /* ReduxTest.xcdatamodeld */; };
+		BDF7A8A31F33A17F00B34797 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDF7A8A21F33A17F00B34797 /* Assets.xcassets */; };
+		BDF7A8A61F33A17F00B34797 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDF7A8A41F33A17F00B34797 /* LaunchScreen.storyboard */; };
+		BDF7A8B11F33A17F00B34797 /* ReduxTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF7A8B01F33A17F00B34797 /* ReduxTestTests.swift */; };
+		BDF7A8BC1F33A17F00B34797 /* ReduxTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF7A8BB1F33A17F00B34797 /* ReduxTestUITests.swift */; };
+		BDF7A8D11F33B1DF00B34797 /* DatabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF7A8D01F33B1DF00B34797 /* DatabaseController.swift */; };
+		BDF7A8D81F33B49C00B34797 /* Beer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF7A8D61F33B49C00B34797 /* Beer+CoreDataClass.swift */; };
+		BDF7A8D91F33B49C00B34797 /* Beer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF7A8D71F33B49C00B34797 /* Beer+CoreDataProperties.swift */; };
+		BDF7A8DC1F33BAC200B34797 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF7A8DB1F33BAC200B34797 /* AppState.swift */; };
+		BDF7A8DE1F35095300B34797 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF7A8DD1F35095300B34797 /* Reducer.swift */; };
+		BDF7A8E11F350B7800B34797 /* ReadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF7A8E01F350B7800B34797 /* ReadingState.swift */; };
+		BDF7A8E31F350D9700B34797 /* ReadingReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF7A8E21F350D9700B34797 /* ReadingReducer.swift */; };
+		BDF7A8E51F35108D00B34797 /* FetchByNameAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF7A8E41F35108D00B34797 /* FetchByNameAction.swift */; };
+		BDF7A8E71F38F2CD00B34797 /* CreatingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF7A8E61F38F2CD00B34797 /* CreatingState.swift */; };
+		BDF7A8E91F38F31A00B34797 /* CreatingReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF7A8E81F38F31900B34797 /* CreatingReducer.swift */; };
+		BDF7A8EB1F38F38E00B34797 /* CreateAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF7A8EA1F38F38E00B34797 /* CreateAction.swift */; };
+		BDF7A8ED1F38F5A500B34797 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF7A8EC1F38F5A500B34797 /* Extensions.swift */; };
+		F1D1C581D06191AF9EA39DE0 /* Pods_ReduxTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9377AA91BFF6CED5680B0ECB /* Pods_ReduxTestTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BDF7A8AD1F33A17F00B34797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDF7A88D1F33A17E00B34797 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDF7A8941F33A17E00B34797;
+			remoteInfo = ReduxTest;
+		};
+		BDF7A8B81F33A17F00B34797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDF7A88D1F33A17E00B34797 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDF7A8941F33A17E00B34797;
+			remoteInfo = ReduxTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2AEA3EAD58A367E9FFD168EF /* Pods-ReduxTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReduxTestTests/Pods-ReduxTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		758402CD348FD6D44A6B8EE0 /* Pods-ReduxTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReduxTest/Pods-ReduxTest.release.xcconfig"; sourceTree = "<group>"; };
+		79449FD828E8095B8F6EB3D5 /* Pods-ReduxTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxTestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReduxTestUITests/Pods-ReduxTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7FA135DCFAE68662DE2BEA0F /* Pods_ReduxTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReduxTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88E0D8594B741FB6252AD637 /* Pods_ReduxTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReduxTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9377AA91BFF6CED5680B0ECB /* Pods_ReduxTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReduxTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5175BE826445C72A5302771 /* Pods-ReduxTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReduxTest/Pods-ReduxTest.debug.xcconfig"; sourceTree = "<group>"; };
+		B1129D092D6DE9ACE48DF01D /* Pods-ReduxTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReduxTestTests/Pods-ReduxTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B9040E275014FBB82642DCAB /* Pods-ReduxTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxTestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReduxTestUITests/Pods-ReduxTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BDF7A8951F33A17E00B34797 /* ReduxTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduxTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDF7A8981F33A17E00B34797 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BDF7A89A1F33A17E00B34797 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BDF7A89D1F33A17F00B34797 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BDF7A8A01F33A17F00B34797 /* ReduxTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ReduxTest.xcdatamodel; sourceTree = "<group>"; };
+		BDF7A8A21F33A17F00B34797 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDF7A8A51F33A17F00B34797 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BDF7A8A71F33A17F00B34797 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDF7A8AC1F33A17F00B34797 /* ReduxTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReduxTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDF7A8B01F33A17F00B34797 /* ReduxTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxTestTests.swift; sourceTree = "<group>"; };
+		BDF7A8B21F33A17F00B34797 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDF7A8B71F33A17F00B34797 /* ReduxTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReduxTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDF7A8BB1F33A17F00B34797 /* ReduxTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxTestUITests.swift; sourceTree = "<group>"; };
+		BDF7A8BD1F33A17F00B34797 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDF7A8D01F33B1DF00B34797 /* DatabaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseController.swift; sourceTree = "<group>"; };
+		BDF7A8D61F33B49C00B34797 /* Beer+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Beer+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BDF7A8D71F33B49C00B34797 /* Beer+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Beer+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BDF7A8DB1F33BAC200B34797 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		BDF7A8DD1F35095300B34797 /* Reducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
+		BDF7A8E01F350B7800B34797 /* ReadingState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadingState.swift; sourceTree = "<group>"; };
+		BDF7A8E21F350D9700B34797 /* ReadingReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadingReducer.swift; sourceTree = "<group>"; };
+		BDF7A8E41F35108D00B34797 /* FetchByNameAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchByNameAction.swift; sourceTree = "<group>"; };
+		BDF7A8E61F38F2CD00B34797 /* CreatingState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatingState.swift; sourceTree = "<group>"; };
+		BDF7A8E81F38F31900B34797 /* CreatingReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatingReducer.swift; sourceTree = "<group>"; };
+		BDF7A8EA1F38F38E00B34797 /* CreateAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAction.swift; sourceTree = "<group>"; };
+		BDF7A8EC1F38F5A500B34797 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDF7A8921F33A17E00B34797 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CD065C884315F1438DED392 /* Pods_ReduxTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDF7A8A91F33A17F00B34797 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1D1C581D06191AF9EA39DE0 /* Pods_ReduxTestTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDF7A8B41F33A17F00B34797 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C538279A195076F200B9C33 /* Pods_ReduxTestUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BDF7A88C1F33A17E00B34797 = {
+			isa = PBXGroup;
+			children = (
+				BDF7A8971F33A17E00B34797 /* ReduxTest */,
+				BDF7A8AF1F33A17F00B34797 /* ReduxTestTests */,
+				BDF7A8BA1F33A17F00B34797 /* ReduxTestUITests */,
+				BDF7A8961F33A17E00B34797 /* Products */,
+				F2957088352E22849BFCC3DB /* Pods */,
+				F486DB369870D02857EEDED1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BDF7A8961F33A17E00B34797 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDF7A8951F33A17E00B34797 /* ReduxTest.app */,
+				BDF7A8AC1F33A17F00B34797 /* ReduxTestTests.xctest */,
+				BDF7A8B71F33A17F00B34797 /* ReduxTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDF7A8971F33A17E00B34797 /* ReduxTest */ = {
+			isa = PBXGroup;
+			children = (
+				BDF7A8CC1F33B14300B34797 /* Views */,
+				BDF7A8C91F33B0ED00B34797 /* Actions */,
+				BDF7A8DF1F35095E00B34797 /* Reducers */,
+				BDF7A8DA1F33B9BC00B34797 /* States */,
+				BDF7A8CE1F33B18600B34797 /* Swift files */,
+				BDF7A8CD1F33B15F00B34797 /* Storyboards */,
+				BDF7A8CF1F33B19D00B34797 /* Etc */,
+			);
+			path = ReduxTest;
+			sourceTree = "<group>";
+		};
+		BDF7A8AF1F33A17F00B34797 /* ReduxTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				BDF7A8B01F33A17F00B34797 /* ReduxTestTests.swift */,
+				BDF7A8B21F33A17F00B34797 /* Info.plist */,
+			);
+			path = ReduxTestTests;
+			sourceTree = "<group>";
+		};
+		BDF7A8BA1F33A17F00B34797 /* ReduxTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BDF7A8BB1F33A17F00B34797 /* ReduxTestUITests.swift */,
+				BDF7A8BD1F33A17F00B34797 /* Info.plist */,
+			);
+			path = ReduxTestUITests;
+			sourceTree = "<group>";
+		};
+		BDF7A8C91F33B0ED00B34797 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				BDF7A8E41F35108D00B34797 /* FetchByNameAction.swift */,
+				BDF7A8EA1F38F38E00B34797 /* CreateAction.swift */,
+			);
+			name = Actions;
+			sourceTree = "<group>";
+		};
+		BDF7A8CC1F33B14300B34797 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BDF7A89A1F33A17E00B34797 /* ViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		BDF7A8CD1F33B15F00B34797 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BDF7A89C1F33A17F00B34797 /* Main.storyboard */,
+				BDF7A8A41F33A17F00B34797 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		BDF7A8CE1F33B18600B34797 /* Swift files */ = {
+			isa = PBXGroup;
+			children = (
+				BDF7A8D61F33B49C00B34797 /* Beer+CoreDataClass.swift */,
+				BDF7A8D71F33B49C00B34797 /* Beer+CoreDataProperties.swift */,
+				BDF7A8981F33A17E00B34797 /* AppDelegate.swift */,
+				BDF7A8D01F33B1DF00B34797 /* DatabaseController.swift */,
+				BDF7A8EC1F38F5A500B34797 /* Extensions.swift */,
+			);
+			name = "Swift files";
+			sourceTree = "<group>";
+		};
+		BDF7A8CF1F33B19D00B34797 /* Etc */ = {
+			isa = PBXGroup;
+			children = (
+				BDF7A8A21F33A17F00B34797 /* Assets.xcassets */,
+				BDF7A8A71F33A17F00B34797 /* Info.plist */,
+				BDF7A89F1F33A17F00B34797 /* ReduxTest.xcdatamodeld */,
+			);
+			name = Etc;
+			sourceTree = "<group>";
+		};
+		BDF7A8DA1F33B9BC00B34797 /* States */ = {
+			isa = PBXGroup;
+			children = (
+				BDF7A8DB1F33BAC200B34797 /* AppState.swift */,
+				BDF7A8E01F350B7800B34797 /* ReadingState.swift */,
+				BDF7A8E61F38F2CD00B34797 /* CreatingState.swift */,
+			);
+			name = States;
+			sourceTree = "<group>";
+		};
+		BDF7A8DF1F35095E00B34797 /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				BDF7A8DD1F35095300B34797 /* Reducer.swift */,
+				BDF7A8E21F350D9700B34797 /* ReadingReducer.swift */,
+				BDF7A8E81F38F31900B34797 /* CreatingReducer.swift */,
+			);
+			name = Reducers;
+			sourceTree = "<group>";
+		};
+		F2957088352E22849BFCC3DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5175BE826445C72A5302771 /* Pods-ReduxTest.debug.xcconfig */,
+				758402CD348FD6D44A6B8EE0 /* Pods-ReduxTest.release.xcconfig */,
+				B1129D092D6DE9ACE48DF01D /* Pods-ReduxTestTests.debug.xcconfig */,
+				2AEA3EAD58A367E9FFD168EF /* Pods-ReduxTestTests.release.xcconfig */,
+				79449FD828E8095B8F6EB3D5 /* Pods-ReduxTestUITests.debug.xcconfig */,
+				B9040E275014FBB82642DCAB /* Pods-ReduxTestUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F486DB369870D02857EEDED1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FA135DCFAE68662DE2BEA0F /* Pods_ReduxTest.framework */,
+				9377AA91BFF6CED5680B0ECB /* Pods_ReduxTestTests.framework */,
+				88E0D8594B741FB6252AD637 /* Pods_ReduxTestUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDF7A8941F33A17E00B34797 /* ReduxTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDF7A8C01F33A17F00B34797 /* Build configuration list for PBXNativeTarget "ReduxTest" */;
+			buildPhases = (
+				E5D71083005951907ED17BEC /* [CP] Check Pods Manifest.lock */,
+				BDF7A8911F33A17E00B34797 /* Sources */,
+				BDF7A8921F33A17E00B34797 /* Frameworks */,
+				BDF7A8931F33A17E00B34797 /* Resources */,
+				A5B47130DD4B87EE8408FA5E /* [CP] Embed Pods Frameworks */,
+				3B85FA271C72110E59C37096 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReduxTest;
+			productName = ReduxTest;
+			productReference = BDF7A8951F33A17E00B34797 /* ReduxTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BDF7A8AB1F33A17F00B34797 /* ReduxTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDF7A8C31F33A17F00B34797 /* Build configuration list for PBXNativeTarget "ReduxTestTests" */;
+			buildPhases = (
+				A4FED4475C1C7BCC6B9D034C /* [CP] Check Pods Manifest.lock */,
+				BDF7A8A81F33A17F00B34797 /* Sources */,
+				BDF7A8A91F33A17F00B34797 /* Frameworks */,
+				BDF7A8AA1F33A17F00B34797 /* Resources */,
+				A576C9BAB20C045258BAFE15 /* [CP] Embed Pods Frameworks */,
+				4F12DA6523633EBFC32FE719 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDF7A8AE1F33A17F00B34797 /* PBXTargetDependency */,
+			);
+			name = ReduxTestTests;
+			productName = ReduxTestTests;
+			productReference = BDF7A8AC1F33A17F00B34797 /* ReduxTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BDF7A8B61F33A17F00B34797 /* ReduxTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDF7A8C61F33A17F00B34797 /* Build configuration list for PBXNativeTarget "ReduxTestUITests" */;
+			buildPhases = (
+				138E836B584DF9FC86002105 /* [CP] Check Pods Manifest.lock */,
+				BDF7A8B31F33A17F00B34797 /* Sources */,
+				BDF7A8B41F33A17F00B34797 /* Frameworks */,
+				BDF7A8B51F33A17F00B34797 /* Resources */,
+				AFD1A0C2F02EEBCADA698E4B /* [CP] Embed Pods Frameworks */,
+				7EEBC7C0609CE1B73F78FFF6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDF7A8B91F33A17F00B34797 /* PBXTargetDependency */,
+			);
+			name = ReduxTestUITests;
+			productName = ReduxTestUITests;
+			productReference = BDF7A8B71F33A17F00B34797 /* ReduxTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDF7A88D1F33A17E00B34797 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Guilherme Paciulli";
+				TargetAttributes = {
+					BDF7A8941F33A17E00B34797 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = VLLH384AC4;
+						ProvisioningStyle = Automatic;
+					};
+					BDF7A8AB1F33A17F00B34797 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = VLLH384AC4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BDF7A8941F33A17E00B34797;
+					};
+					BDF7A8B61F33A17F00B34797 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = VLLH384AC4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BDF7A8941F33A17E00B34797;
+					};
+				};
+			};
+			buildConfigurationList = BDF7A8901F33A17E00B34797 /* Build configuration list for PBXProject "ReduxTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BDF7A88C1F33A17E00B34797;
+			productRefGroup = BDF7A8961F33A17E00B34797 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDF7A8941F33A17E00B34797 /* ReduxTest */,
+				BDF7A8AB1F33A17F00B34797 /* ReduxTestTests */,
+				BDF7A8B61F33A17F00B34797 /* ReduxTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDF7A8931F33A17E00B34797 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDF7A8A61F33A17F00B34797 /* LaunchScreen.storyboard in Resources */,
+				BDF7A8A31F33A17F00B34797 /* Assets.xcassets in Resources */,
+				BDF7A89E1F33A17F00B34797 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDF7A8AA1F33A17F00B34797 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDF7A8B51F33A17F00B34797 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		138E836B584DF9FC86002105 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3B85FA271C72110E59C37096 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReduxTest/Pods-ReduxTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F12DA6523633EBFC32FE719 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReduxTestTests/Pods-ReduxTestTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EEBC7C0609CE1B73F78FFF6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReduxTestUITests/Pods-ReduxTestUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4FED4475C1C7BCC6B9D034C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A576C9BAB20C045258BAFE15 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReduxTestTests/Pods-ReduxTestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5B47130DD4B87EE8408FA5E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReduxTest/Pods-ReduxTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFD1A0C2F02EEBCADA698E4B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReduxTestUITests/Pods-ReduxTestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5D71083005951907ED17BEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDF7A8911F33A17E00B34797 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDF7A8E11F350B7800B34797 /* ReadingState.swift in Sources */,
+				BDF7A8E31F350D9700B34797 /* ReadingReducer.swift in Sources */,
+				BDF7A8E91F38F31A00B34797 /* CreatingReducer.swift in Sources */,
+				BDF7A8D91F33B49C00B34797 /* Beer+CoreDataProperties.swift in Sources */,
+				BDF7A8D11F33B1DF00B34797 /* DatabaseController.swift in Sources */,
+				BDF7A8D81F33B49C00B34797 /* Beer+CoreDataClass.swift in Sources */,
+				BDF7A8DC1F33BAC200B34797 /* AppState.swift in Sources */,
+				BDF7A8E51F35108D00B34797 /* FetchByNameAction.swift in Sources */,
+				BDF7A8A11F33A17F00B34797 /* ReduxTest.xcdatamodeld in Sources */,
+				BDF7A8E71F38F2CD00B34797 /* CreatingState.swift in Sources */,
+				BDF7A8ED1F38F5A500B34797 /* Extensions.swift in Sources */,
+				BDF7A8DE1F35095300B34797 /* Reducer.swift in Sources */,
+				BDF7A8EB1F38F38E00B34797 /* CreateAction.swift in Sources */,
+				BDF7A89B1F33A17E00B34797 /* ViewController.swift in Sources */,
+				BDF7A8991F33A17E00B34797 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDF7A8A81F33A17F00B34797 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDF7A8B11F33A17F00B34797 /* ReduxTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDF7A8B31F33A17F00B34797 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDF7A8BC1F33A17F00B34797 /* ReduxTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BDF7A8AE1F33A17F00B34797 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDF7A8941F33A17E00B34797 /* ReduxTest */;
+			targetProxy = BDF7A8AD1F33A17F00B34797 /* PBXContainerItemProxy */;
+		};
+		BDF7A8B91F33A17F00B34797 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDF7A8941F33A17E00B34797 /* ReduxTest */;
+			targetProxy = BDF7A8B81F33A17F00B34797 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BDF7A89C1F33A17F00B34797 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDF7A89D1F33A17F00B34797 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BDF7A8A41F33A17F00B34797 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDF7A8A51F33A17F00B34797 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BDF7A8BE1F33A17F00B34797 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BDF7A8BF1F33A17F00B34797 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDF7A8C11F33A17F00B34797 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5175BE826445C72A5302771 /* Pods-ReduxTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VLLH384AC4;
+				INFOPLIST_FILE = ReduxTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.gh.paciulli.ReduxTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BDF7A8C21F33A17F00B34797 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 758402CD348FD6D44A6B8EE0 /* Pods-ReduxTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VLLH384AC4;
+				INFOPLIST_FILE = ReduxTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.gh.paciulli.ReduxTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		BDF7A8C41F33A17F00B34797 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1129D092D6DE9ACE48DF01D /* Pods-ReduxTestTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = VLLH384AC4;
+				INFOPLIST_FILE = ReduxTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.gh.paciulli.ReduxTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReduxTest.app/ReduxTest";
+			};
+			name = Debug;
+		};
+		BDF7A8C51F33A17F00B34797 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AEA3EAD58A367E9FFD168EF /* Pods-ReduxTestTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = VLLH384AC4;
+				INFOPLIST_FILE = ReduxTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.gh.paciulli.ReduxTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReduxTest.app/ReduxTest";
+			};
+			name = Release;
+		};
+		BDF7A8C71F33A17F00B34797 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79449FD828E8095B8F6EB3D5 /* Pods-ReduxTestUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = VLLH384AC4;
+				INFOPLIST_FILE = ReduxTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.gh.paciulli.ReduxTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ReduxTest;
+			};
+			name = Debug;
+		};
+		BDF7A8C81F33A17F00B34797 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9040E275014FBB82642DCAB /* Pods-ReduxTestUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = VLLH384AC4;
+				INFOPLIST_FILE = ReduxTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.gh.paciulli.ReduxTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ReduxTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDF7A8901F33A17E00B34797 /* Build configuration list for PBXProject "ReduxTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDF7A8BE1F33A17F00B34797 /* Debug */,
+				BDF7A8BF1F33A17F00B34797 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDF7A8C01F33A17F00B34797 /* Build configuration list for PBXNativeTarget "ReduxTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDF7A8C11F33A17F00B34797 /* Debug */,
+				BDF7A8C21F33A17F00B34797 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDF7A8C31F33A17F00B34797 /* Build configuration list for PBXNativeTarget "ReduxTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDF7A8C41F33A17F00B34797 /* Debug */,
+				BDF7A8C51F33A17F00B34797 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDF7A8C61F33A17F00B34797 /* Build configuration list for PBXNativeTarget "ReduxTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDF7A8C71F33A17F00B34797 /* Debug */,
+				BDF7A8C81F33A17F00B34797 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BDF7A89F1F33A17F00B34797 /* ReduxTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BDF7A8A01F33A17F00B34797 /* ReduxTest.xcdatamodel */,
+			);
+			currentVersion = BDF7A8A01F33A17F00B34797 /* ReduxTest.xcdatamodel */;
+			path = ReduxTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BDF7A88D1F33A17E00B34797 /* Project object */;
+}
