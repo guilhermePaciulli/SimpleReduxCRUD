@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3C538279A195076F200B9C33 /* Pods_ReduxTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88E0D8594B741FB6252AD637 /* Pods_ReduxTestUITests.framework */; };
 		4CD065C884315F1438DED392 /* Pods_ReduxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA135DCFAE68662DE2BEA0F /* Pods_ReduxTest.framework */; };
+		BD43440C1F39E9B100A54E12 /* InspectAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD43440B1F39E9B100A54E12 /* InspectAction.swift */; };
 		BDF7A8991F33A17E00B34797 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF7A8981F33A17E00B34797 /* AppDelegate.swift */; };
 		BDF7A89B1F33A17E00B34797 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF7A89A1F33A17E00B34797 /* ViewController.swift */; };
 		BDF7A89E1F33A17F00B34797 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDF7A89C1F33A17F00B34797 /* Main.storyboard */; };
@@ -59,6 +60,7 @@
 		A5175BE826445C72A5302771 /* Pods-ReduxTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReduxTest/Pods-ReduxTest.debug.xcconfig"; sourceTree = "<group>"; };
 		B1129D092D6DE9ACE48DF01D /* Pods-ReduxTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReduxTestTests/Pods-ReduxTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B9040E275014FBB82642DCAB /* Pods-ReduxTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxTestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReduxTestUITests/Pods-ReduxTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BD43440B1F39E9B100A54E12 /* InspectAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InspectAction.swift; sourceTree = "<group>"; };
 		BDF7A8951F33A17E00B34797 /* ReduxTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduxTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDF7A8981F33A17E00B34797 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDF7A89A1F33A17E00B34797 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 			children = (
 				BDF7A8E41F35108D00B34797 /* FetchByNameAction.swift */,
 				BDF7A8EA1F38F38E00B34797 /* CreateAction.swift */,
+				BD43440B1F39E9B100A54E12 /* InspectAction.swift */,
 			);
 			name = Actions;
 			sourceTree = "<group>";
@@ -546,6 +549,7 @@
 			files = (
 				BDF7A8E11F350B7800B34797 /* ReadingState.swift in Sources */,
 				BDF7A8E31F350D9700B34797 /* ReadingReducer.swift in Sources */,
+				BD43440C1F39E9B100A54E12 /* InspectAction.swift in Sources */,
 				BDF7A8E91F38F31A00B34797 /* CreatingReducer.swift in Sources */,
 				BDF7A8D91F33B49C00B34797 /* Beer+CoreDataProperties.swift in Sources */,
 				BDF7A8D11F33B1DF00B34797 /* DatabaseController.swift in Sources */,
