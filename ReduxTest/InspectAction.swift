@@ -12,8 +12,6 @@ import UIKit
 
 struct InspectAction: Action {
     
-    var name: String
-    var price: Float
-    var picture: UIImage
+    var beer: Beer
     
 }
