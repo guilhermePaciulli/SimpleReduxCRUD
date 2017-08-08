@@ -56,8 +56,11 @@ extension Beer {
             if let beer = entity as? Beer {
                 beer.name = name
                 beer.price = price
-                beer.setPicture(image: picture!)
+                if let validPicture = picture {
+                    beer.setPicture(image: validPicture)
+                }
             }
+            DatabaseController.saveContext()
         }
         
         return errors
