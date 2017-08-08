@@ -9,7 +9,7 @@
 import Foundation
 import ReSwift
 
-func ReadingReducer(action: Action, state: ReadingState?) -> ReadingState {
+func readingReducer(action: Action, state: ReadingState?) -> ReadingState {
     
     var state = state ?? ReadingState()
     

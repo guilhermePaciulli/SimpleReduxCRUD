@@ -10,6 +10,8 @@
 		3C538279A195076F200B9C33 /* Pods_ReduxTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88E0D8594B741FB6252AD637 /* Pods_ReduxTestUITests.framework */; };
 		4CD065C884315F1438DED392 /* Pods_ReduxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA135DCFAE68662DE2BEA0F /* Pods_ReduxTest.framework */; };
 		BD43440C1F39E9B100A54E12 /* InspectAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD43440B1F39E9B100A54E12 /* InspectAction.swift */; };
+		BD43440E1F39EABA00A54E12 /* InspectReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD43440D1F39EABA00A54E12 /* InspectReducer.swift */; };
+		BD4344101F39EB1400A54E12 /* InspectState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD43440F1F39EB1400A54E12 /* InspectState.swift */; };
 		BDF7A8991F33A17E00B34797 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF7A8981F33A17E00B34797 /* AppDelegate.swift */; };
 		BDF7A89B1F33A17E00B34797 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF7A89A1F33A17E00B34797 /* ViewController.swift */; };
 		BDF7A89E1F33A17F00B34797 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDF7A89C1F33A17F00B34797 /* Main.storyboard */; };
@@ -61,6 +63,8 @@
 		B1129D092D6DE9ACE48DF01D /* Pods-ReduxTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReduxTestTests/Pods-ReduxTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B9040E275014FBB82642DCAB /* Pods-ReduxTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxTestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReduxTestUITests/Pods-ReduxTestUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BD43440B1F39E9B100A54E12 /* InspectAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InspectAction.swift; sourceTree = "<group>"; };
+		BD43440D1F39EABA00A54E12 /* InspectReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InspectReducer.swift; sourceTree = "<group>"; };
+		BD43440F1F39EB1400A54E12 /* InspectState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InspectState.swift; sourceTree = "<group>"; };
 		BDF7A8951F33A17E00B34797 /* ReduxTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduxTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDF7A8981F33A17E00B34797 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDF7A89A1F33A17E00B34797 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -226,6 +230,7 @@
 				BDF7A8DB1F33BAC200B34797 /* AppState.swift */,
 				BDF7A8E01F350B7800B34797 /* ReadingState.swift */,
 				BDF7A8E61F38F2CD00B34797 /* CreatingState.swift */,
+				BD43440F1F39EB1400A54E12 /* InspectState.swift */,
 			);
 			name = States;
 			sourceTree = "<group>";
@@ -236,6 +241,7 @@
 				BDF7A8DD1F35095300B34797 /* Reducer.swift */,
 				BDF7A8E21F350D9700B34797 /* ReadingReducer.swift */,
 				BDF7A8E81F38F31900B34797 /* CreatingReducer.swift */,
+				BD43440D1F39EABA00A54E12 /* InspectReducer.swift */,
 			);
 			name = Reducers;
 			sourceTree = "<group>";
@@ -549,6 +555,7 @@
 			files = (
 				BDF7A8E11F350B7800B34797 /* ReadingState.swift in Sources */,
 				BDF7A8E31F350D9700B34797 /* ReadingReducer.swift in Sources */,
+				BD4344101F39EB1400A54E12 /* InspectState.swift in Sources */,
 				BD43440C1F39E9B100A54E12 /* InspectAction.swift in Sources */,
 				BDF7A8E91F38F31A00B34797 /* CreatingReducer.swift in Sources */,
 				BDF7A8D91F33B49C00B34797 /* Beer+CoreDataProperties.swift in Sources */,
@@ -562,6 +569,7 @@
 				BDF7A8DE1F35095300B34797 /* Reducer.swift in Sources */,
 				BDF7A8EB1F38F38E00B34797 /* CreateAction.swift in Sources */,
 				BDF7A89B1F33A17E00B34797 /* ViewController.swift in Sources */,
+				BD43440E1F39EABA00A54E12 /* InspectReducer.swift in Sources */,
 				BDF7A8991F33A17E00B34797 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

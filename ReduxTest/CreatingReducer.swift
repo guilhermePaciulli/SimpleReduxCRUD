@@ -9,7 +9,7 @@
 import Foundation
 import ReSwift
 
-func CreatingReducer(action: Action, state: CreatingState?) -> CreatingState {
+func creatingReducer(action: Action, state: CreatingState?) -> CreatingState {
     
     var state = state ?? CreatingState(errors: [])
     
