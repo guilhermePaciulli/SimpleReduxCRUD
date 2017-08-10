@@ -22,6 +22,16 @@ func inspectReducer(action: Action, state: InspectState?) -> InspectState {
         }
         state.price = beer.price
         state.picture = beer.getPicture()
+    case let updateAction as UpdateAction:
+        let beer = updateAction.beer
+        beer.name = updateAction.name
+        beer.price = updateAction.price
+        beer.setPicture(image: updateAction.picture)
+        DatabaseController.saveContext()
+        
+        state.name = updateAction.name
+        state.price = updateAction.price
+        state.picture = updateAction.picture
     default:
         break
     }

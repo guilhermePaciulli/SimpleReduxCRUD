@@ -13,6 +13,7 @@
 		BD43440E1F39EABA00A54E12 /* InspectReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD43440D1F39EABA00A54E12 /* InspectReducer.swift */; };
 		BD4344101F39EB1400A54E12 /* InspectState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD43440F1F39EB1400A54E12 /* InspectState.swift */; };
 		BD4344121F3A5BFC00A54E12 /* DeleteAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4344111F3A5BFC00A54E12 /* DeleteAction.swift */; };
+		BD4344181F3C92AA00A54E12 /* UpdateAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4344171F3C92AA00A54E12 /* UpdateAction.swift */; };
 		BDF7A8991F33A17E00B34797 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF7A8981F33A17E00B34797 /* AppDelegate.swift */; };
 		BDF7A89B1F33A17E00B34797 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF7A89A1F33A17E00B34797 /* ViewController.swift */; };
 		BDF7A89E1F33A17F00B34797 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDF7A89C1F33A17F00B34797 /* Main.storyboard */; };
@@ -67,6 +68,7 @@
 		BD43440D1F39EABA00A54E12 /* InspectReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InspectReducer.swift; sourceTree = "<group>"; };
 		BD43440F1F39EB1400A54E12 /* InspectState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InspectState.swift; sourceTree = "<group>"; };
 		BD4344111F3A5BFC00A54E12 /* DeleteAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteAction.swift; sourceTree = "<group>"; };
+		BD4344171F3C92AA00A54E12 /* UpdateAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateAction.swift; sourceTree = "<group>"; };
 		BDF7A8951F33A17E00B34797 /* ReduxTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduxTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDF7A8981F33A17E00B34797 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDF7A89A1F33A17E00B34797 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				BDF7A8EA1F38F38E00B34797 /* CreateAction.swift */,
 				BD43440B1F39E9B100A54E12 /* InspectAction.swift */,
 				BD4344111F3A5BFC00A54E12 /* DeleteAction.swift */,
+				BD4344171F3C92AA00A54E12 /* UpdateAction.swift */,
 			);
 			name = Actions;
 			sourceTree = "<group>";
@@ -570,6 +573,7 @@
 				BDF7A8E71F38F2CD00B34797 /* CreatingState.swift in Sources */,
 				BDF7A8ED1F38F5A500B34797 /* Extensions.swift in Sources */,
 				BDF7A8DE1F35095300B34797 /* Reducer.swift in Sources */,
+				BD4344181F3C92AA00A54E12 /* UpdateAction.swift in Sources */,
 				BDF7A8EB1F38F38E00B34797 /* CreateAction.swift in Sources */,
 				BDF7A89B1F33A17E00B34797 /* ViewController.swift in Sources */,
 				BD4344121F3A5BFC00A54E12 /* DeleteAction.swift in Sources */,
