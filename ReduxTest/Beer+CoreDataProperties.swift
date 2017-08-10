@@ -19,7 +19,7 @@ extension Beer {
     
     @nonobjc private class func fetchRequest(by name: String) -> NSFetchRequest<Beer> {
         let fetch = NSFetchRequest<Beer>(entityName: "Beer")
-        fetch.predicate = NSPredicate(format: "name == %@", name)
+        fetch.predicate = NSPredicate(format: "name CONTAINS %@", name)
         return fetch
     }
     

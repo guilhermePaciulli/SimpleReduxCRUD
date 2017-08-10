@@ -8,16 +8,19 @@
 
 import XCTest
 import CoreData
-@testable import ReduxTest
 import ReSwift
+@testable import ReduxTest
 
 class ReduxCRUDTests: XCTestCase {
     
-    let managedObject = setUpInMemoryManagedObjectContext()
+    var store = Store<AppState>(reducer: appReducer, state: nil)
     
-    func testCreateActionSuccess() {
-        
-        let store = Store<AppState>(reducer: appReducer, state: nil)
+    override func setUp() {
+        _ = Beer.fetchAll().map({ DatabaseController.persistentContainer.viewContext.delete($0) })
+        store = Store<AppState>(reducer: appReducer, state: nil)
+    }
+    
+    func testCreateAction() {
         
         let name = "Guinness"
         let price = Float(exactly: 13.0)
@@ -29,24 +32,31 @@ class ReduxCRUDTests: XCTestCase {
         
         XCTAssert(store.state.creatingState.errors.isEmpty)
         
+        let fetchAllAction = FetchAllAction()
+        
+        store.dispatch(fetchAllAction)
+        
+        XCTAssert(store.state.readingState.beers.count == 1)
         
     }
     
-}
-
-func setUpInMemoryManagedObjectContext() -> NSManagedObjectContext {
-    let managedObjectModel = NSManagedObjectModel.mergedModel(from: [Bundle.main])!
-    
-    let persistentStoreCoordinator = NSPersistentStoreCoordinator(managedObjectModel: managedObjectModel)
-    
-    do {
-        try persistentStoreCoordinator.addPersistentStore(ofType: NSInMemoryStoreType, configurationName: nil, at: nil, options: nil)
-    } catch {
-        print("Adding in-memory persistent store failed")
+    func testSearchAction() {
+        
+        let store = Store<AppState>(reducer: appReducer, state: nil)
+        
+        let name = "Guinness"
+        let price = Float(exactly: 13.0)
+        let picture = UIImage(named: "Guinness.jpg")
+        
+        let createAction = CreateAction(name: name, price: price!, picture: picture!)
+        
+        store.dispatch(createAction)
+        
+        let fetchByName = FetchByNameAction(name: "Gui")
+        
+        store.dispatch(fetchByName)
+        
+        XCTAssert(store.state.readingState.beers.count == 1)
     }
     
-    let managedObjectContext = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
-    managedObjectContext.persistentStoreCoordinator = persistentStoreCoordinator
-    
-    return managedObjectContext
 }
