@@ -13,4 +13,7 @@ struct AppState: StateType {
     
     let readingState: ReadingState
     
+    let creatingState: CreatingState
+    
+    let inspectState: InspectState
 }

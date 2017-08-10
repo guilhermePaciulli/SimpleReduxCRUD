@@ -11,6 +11,8 @@ import ReSwift
 
 func appReducer(action: Action, state: AppState?) -> AppState {
     
-    return AppState(readingState: readingReducer(action: action, state: state?.readingState))
+    return AppState(readingState:  readingReducer( action: action, state: state?.readingState ),
+                    creatingState: creatingReducer(action: action, state: state?.creatingState),
+                    inspectState:  inspectReducer( action: action, state: state?.inspectState ))
 
 }
