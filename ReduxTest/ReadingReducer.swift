@@ -14,13 +14,15 @@ func readingReducer(action: Action, state: ReadingState?) -> ReadingState {
     var state = state ?? ReadingState()
     
     switch action {
+    case _ as FetchAllAction:
+        state.beers = Beer.fetchAll()
     case let fetchByNameAction as FetchByNameAction:
         state.beers = Beer.fetch(by: fetchByNameAction.name)
     case let deleteAction as DeleteAction:
         let beerToBeDeleted = deleteAction.beer
         DatabaseController.persistentContainer.viewContext.delete(beerToBeDeleted)
         DatabaseController.saveContext()
-        state = ReadingState()
+        state.beers = Beer.fetchAll()
     default:
         break
     }

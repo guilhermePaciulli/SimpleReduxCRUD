@@ -11,10 +11,6 @@ import ReSwift
 
 struct ReadingState: StateType {
     
-    var beers: [Beer]
-    
-    init() {
-        beers = Beer.fetchAll()
-    }
+    var beers: [Beer] = []
     
 }
