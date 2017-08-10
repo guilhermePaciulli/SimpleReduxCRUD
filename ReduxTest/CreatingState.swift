@@ -9,7 +9,5 @@
 import Foundation
 
 struct CreatingState {
-    
-    var errors: [String]
-    
+        
 }

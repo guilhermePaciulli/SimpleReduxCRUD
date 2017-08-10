@@ -11,11 +11,11 @@ import ReSwift
 
 func creatingReducer(action: Action, state: CreatingState?) -> CreatingState {
     
-    var state = state ?? CreatingState(errors: [])
+    let state = state ?? CreatingState()
     
     switch action {
     case let creatingAction as CreateAction:
-        state.errors = Beer.insertBeer(with: creatingAction.name, and: creatingAction.price, and: creatingAction.picture)
+        Beer.insertBeer(with: creatingAction.name, and: creatingAction.price, and: creatingAction.picture)
     default:
         break
     }

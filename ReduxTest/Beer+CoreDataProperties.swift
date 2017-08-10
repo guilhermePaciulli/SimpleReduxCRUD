@@ -44,26 +44,18 @@ extension Beer {
         return []
     }
     
-    @nonobjc public class func insertBeer(with name: String, and price: Float, and picture: UIImage?) -> [String] {
-        var errors: [String] = []
+    @nonobjc public class func insertBeer(with name: String, and price: Float, and picture: UIImage?) {
         
-        if !name.isValid() { errors.append("Nome inválido")     }
-        if price.isZero    { errors.append("Preço inválido")    }
-        if picture == nil  { errors.append("Foto não inserida") }
-        
-        if errors.isEmpty {
-            let entity = NSEntityDescription.insertNewObject(forEntityName: "Beer", into: DatabaseController.persistentContainer.viewContext)
-            if let beer = entity as? Beer {
-                beer.name = name
-                beer.price = price
-                if let validPicture = picture {
-                    beer.setPicture(image: validPicture)
-                }
+        let entity = NSEntityDescription.insertNewObject(forEntityName: "Beer", into: DatabaseController.persistentContainer.viewContext)
+        if let beer = entity as? Beer {
+            beer.name = name
+            beer.price = price
+            if let validPicture = picture {
+                beer.setPicture(image: validPicture)
             }
-            DatabaseController.saveContext()
         }
+        DatabaseController.saveContext()
         
-        return errors
     }
     
     public func setPicture(image: UIImage) {
