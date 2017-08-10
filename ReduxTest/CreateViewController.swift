@@ -19,9 +19,23 @@ class CreateViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         picker.delegate = self
+        picture.isUserInteractionEnabled = true
     }
     
     @IBAction func create(_ sender: Any) {
+        if let name = self.name.text {
+            if let price = (self.price.text as NSString?)?.floatValue {
+                if let picture = self.picture.image {
+                    store.dispatch(CreateAction(name: name, price: price, picture: picture))
+                } else {
+                    self.invalidFieldsError()
+                }
+            } else {
+                self.invalidFieldsError()
+            }
+        } else {
+            self.invalidFieldsError()
+        }
         
     }
     
@@ -32,11 +46,22 @@ class CreateViewController: UIViewController {
     @IBAction func setBeerPicture(_ sender: Any) {
         let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-        let shoot = UIAlertAction(title: "Shoot photo", style: .default, handler: { [unowned self] action in self.shootPhoto() })
+        let shoot = UIAlertAction(title: "Shoot photo", style: .default, handler: { [unowned self] action in
+            self.shootPhoto() })
         let select = UIAlertAction(title: "Pick photo", style: .default, handler: { [unowned self] action in
             self.showPickerPhoto() })
         alert.addAction(cancel)
         alert.addAction(select)
+        alert.addAction(shoot)
+        
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func invalidFieldsError() {
+        let alert = UIAlertController(title: "All fields are needed", message: nil, preferredStyle: .alert)
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        let shoot = UIAlertAction(title: "Ok", style: .default, handler: { [unowned self] action in self.shootPhoto() })
+        alert.addAction(cancel)
         alert.addAction(shoot)
         
         self.present(alert, animated: true, completion: nil)

@@ -55,13 +55,10 @@
                     <navigationItem key="navigationItem" title="Beers" id="1pV-MU-aI0">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Jpz-Ki-L1Z">
                             <connections>
-                                <action selector="addBeer:" destination="KN6-JO-BUV" id="Pjs-2R-37q"/>
+                                <action selector="addBeer:" destination="KN6-JO-BUV" id="XMM-Ka-JCy"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="addBeer" destination="Jpz-Ki-L1Z" id="A4O-Od-IPc"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lFD-55-MOl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -81,7 +78,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a1T-YU-9vC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-647" y="166"/>
+            <point key="canvasLocation" x="-1162" y="166"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="M44-pP-dyF">
