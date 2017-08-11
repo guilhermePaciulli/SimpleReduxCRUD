@@ -216,7 +216,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5yv-aL-1ba" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-98" y="-637"/>
+            <point key="canvasLocation" x="-98" y="-672"/>
         </scene>
         <!--Create View Controller-->
         <scene sceneID="Xq0-U4-gcP">
@@ -301,6 +301,7 @@
                     <connections>
                         <outlet property="name" destination="2t1-om-Xab" id="KX6-UT-5nN"/>
                         <outlet property="picture" destination="7Xm-bk-MgM" id="9Lg-h9-PHY"/>
+                        <outlet property="popUpView" destination="R3P-zg-LjE" id="ftM-j7-8gC"/>
                         <outlet property="price" destination="YvV-nx-rBQ" id="ESI-Fy-bAD"/>
                     </connections>
                 </viewController>

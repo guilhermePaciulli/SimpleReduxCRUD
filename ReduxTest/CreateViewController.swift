@@ -10,6 +10,7 @@ import UIKit
 
 class CreateViewController: UIViewController {
     
+    @IBOutlet weak var popUpView: UIView!
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var price: UITextField!
     @IBOutlet weak var picture: UIImageView!
@@ -20,6 +21,8 @@ class CreateViewController: UIViewController {
         super.viewDidLoad()
         picker.delegate = self
         picture.isUserInteractionEnabled = true
+        self.popUpView.layer.cornerRadius = 10
+        self.popUpView.clipsToBounds = true
     }
     
     @IBAction func create(_ sender: Any) {
