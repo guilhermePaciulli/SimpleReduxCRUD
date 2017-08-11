@@ -80,10 +80,10 @@
             </objects>
             <point key="canvasLocation" x="-1162" y="166"/>
         </scene>
-        <!--View Controller-->
+        <!--Edit View Controller-->
         <scene sceneID="M44-pP-dyF">
             <objects>
-                <viewController storyboardIdentifier="edit" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PAL-xV-LtZ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="edit" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PAL-xV-LtZ" customClass="EditViewController" customModule="ReduxTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oTv-tl-5IM"/>
                         <viewControllerLayoutGuide type="bottom" id="acx-7h-cfe"/>
@@ -107,15 +107,24 @@
                                         <rect key="frame" x="141" y="335" width="141" height="38"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Ok"/>
+                                        <connections>
+                                            <action selector="ok:" destination="PAL-xV-LtZ" eventType="touchUpInside" id="uIf-z6-5Np"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCs-Ms-iAh">
                                         <rect key="frame" x="0.0" y="335" width="141" height="37"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Cancel"/>
+                                        <connections>
+                                            <action selector="cancel:" destination="PAL-xV-LtZ" eventType="touchUpInside" id="QLm-Dc-Dds"/>
+                                        </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r1J-k3-x7b">
                                         <rect key="frame" x="8" y="52" width="266" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="K1u-Ch-biC" appends="YES" id="aLg-qQ-cHc"/>
+                                        </connections>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vj-pf-lgW">
                                         <rect key="frame" x="8" y="260" width="55" height="30"/>
@@ -151,15 +160,25 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.3028146404" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="name" destination="oHs-Yk-Lt1" id="UZa-PA-Mjb"/>
+                        <outlet property="picture" destination="r1J-k3-x7b" id="LI9-G3-ols"/>
+                        <outlet property="price" destination="knG-vc-1MW" id="pfM-75-Min"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fro-qy-njl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="K1u-Ch-biC">
+                    <connections>
+                        <action selector="changePic:" destination="PAL-xV-LtZ" id="ody-xR-wQl"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="797" y="-672"/>
         </scene>
-        <!--View Controller-->
+        <!--Inspect View Controller-->
         <scene sceneID="XCH-ro-Ojl">
             <objects>
-                <viewController storyboardIdentifier="inspect" useStoryboardIdentifierAsRestorationIdentifier="YES" id="x0m-Gv-Zwb" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="inspect" useStoryboardIdentifierAsRestorationIdentifier="YES" id="x0m-Gv-Zwb" customClass="InspectViewController" customModule="ReduxTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iAG-Rd-DmL"/>
                         <viewControllerLayoutGuide type="bottom" id="A4o-hw-bLd"/>
@@ -183,11 +202,17 @@
                                         <rect key="frame" x="141" y="335" width="141" height="38"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Edit"/>
+                                        <connections>
+                                            <action selector="edit:" destination="x0m-Gv-Zwb" eventType="touchUpInside" id="ekB-vA-YIh"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lv-hp-CCQ">
                                         <rect key="frame" x="0.0" y="335" width="141" height="37"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Ok"/>
+                                        <connections>
+                                            <action selector="ok:" destination="x0m-Gv-Zwb" eventType="touchUpInside" id="TIy-0z-ZDv"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dsa-iJ-Rxq">
                                         <rect key="frame" x="8" y="277" width="274" height="21"/>
@@ -213,6 +238,12 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.3028146404" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="name" destination="Dsa-iJ-Rxq" id="aM1-Zs-dhD"/>
+                        <outlet property="picture" destination="gR5-0m-xeY" id="47j-Mt-1fr"/>
+                        <outlet property="popUpView" destination="f2E-Ws-q7a" id="GAo-EB-agw"/>
+                        <outlet property="price" destination="01A-dR-RJ7" id="ACb-7B-Kwm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5yv-aL-1ba" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
