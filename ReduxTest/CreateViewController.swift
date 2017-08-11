@@ -24,7 +24,6 @@ class CreateViewController: UIViewController {
         self.popUpView.layer.cornerRadius = 10
         self.popUpView.clipsToBounds = true
         self.hideKeyboardWhenTappedAround()
-
     }
     
     @IBAction func create(_ sender: Any) {
