@@ -24,6 +24,7 @@ class EditViewController: UIViewController {
         picture.isUserInteractionEnabled = true
         self.popUpView.layer.cornerRadius = 10
         self.popUpView.clipsToBounds = true
+        self.hideKeyboardWhenTappedAround()
     }
     
     override func viewWillAppear(_ animated: Bool) {
