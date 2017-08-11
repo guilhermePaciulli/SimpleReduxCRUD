@@ -48,6 +48,7 @@ class BeerTableViewController: UITableViewController {
         cell.textLabel?.text = beer.name
         cell.imageView?.image = beer.getPicture()
         cell.detailTextLabel?.text = "$" + String(describing: beer.price)
+        cell.imageView?.contentMode = .scaleAspectFit
         
         return cell
     }
@@ -60,7 +61,10 @@ class BeerTableViewController: UITableViewController {
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
+            let beerDeleted = beers[indexPath.row]
+            self.beers.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
+            store.dispatch(DeleteAction(beer: beerDeleted))
         }
     }
     
