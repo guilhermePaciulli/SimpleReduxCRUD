@@ -163,6 +163,7 @@
                     <connections>
                         <outlet property="name" destination="oHs-Yk-Lt1" id="UZa-PA-Mjb"/>
                         <outlet property="picture" destination="r1J-k3-x7b" id="LI9-G3-ols"/>
+                        <outlet property="popUpView" destination="aaH-Lj-crK" id="s5F-jK-79j"/>
                         <outlet property="price" destination="knG-vc-1MW" id="pfM-75-Min"/>
                     </connections>
                 </viewController>
