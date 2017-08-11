@@ -11,6 +11,7 @@ import UIKit
 class InspectViewController: UIViewController {
     
     var beer: Beer?
+    var beerTableViewController: UIViewController?
 
     @IBOutlet weak var popUpView: UIView!
     @IBOutlet weak var picture: UIImageView!
@@ -44,7 +45,9 @@ class InspectViewController: UIViewController {
             if let editViewController = self.storyboard?.instantiateViewController(withIdentifier: "edit") as? EditViewController {
                 editViewController.beer = self.beer
                 editViewController.modalTransitionStyle = .crossDissolve
-                self.present(editViewController, animated: true, completion: nil)
+                if let destination = self.beerTableViewController {
+                    destination.present(editViewController, animated: true, completion: nil)
+                }
             }
         })
     }

@@ -11,8 +11,8 @@ import UIKit
 
 
 extension String {
-    public func isValid() -> Bool {
-        return !(self.isEmpty || self.trimmingCharacters(in: .whitespaces).isEmpty)
+    public func isNotValid() -> Bool {
+        return (self.isEmpty || self.trimmingCharacters(in: .whitespaces).isEmpty)
     }
 }
 

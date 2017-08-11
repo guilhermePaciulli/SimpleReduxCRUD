@@ -68,6 +68,7 @@ class BeerTableViewController: UITableViewController {
         if let inspectViewController = self.storyboard?.instantiateViewController(withIdentifier: "inspect") as? InspectViewController {
             let selectedBeer = self.beers[indexPath.row]
             inspectViewController.beer = selectedBeer
+            inspectViewController.beerTableViewController = self
             inspectViewController.modalTransitionStyle = .crossDissolve
             self.present(inspectViewController, animated: true, completion: nil)
         }

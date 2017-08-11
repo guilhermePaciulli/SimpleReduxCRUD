@@ -32,7 +32,7 @@ class EditViewController: UIViewController {
             if let beerPrice = self.beer?.price {
                 if let picture = self.beer?.getPicture() {
                     self.name.text = beerName
-                    self.price.text = "$\(beerPrice)"
+                    self.price.text = "\(beerPrice)"
                     self.picture.image = picture
                 }
             }
@@ -75,6 +75,7 @@ class EditViewController: UIViewController {
     
     func allFieldsAreValid() -> Bool {
         if self.name.text == nil ||
+            (self.name.text?.isNotValid())! ||
             self.picture.image == nil ||
             self.price.text == nil ||
             (self.price.text! as NSString).floatValue.isZero {
