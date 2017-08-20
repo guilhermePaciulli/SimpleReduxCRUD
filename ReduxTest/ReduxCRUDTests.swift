@@ -29,9 +29,7 @@ class ReduxCRUDTests: XCTestCase {
         let createAction = CreateAction(name: name, price: price!, picture: picture!)
         
         store.dispatch(createAction)
-        
-        XCTAssert(store.state.creatingState.errors.isEmpty)
-        
+                
         let fetchAllAction = FetchAllAction()
         
         store.dispatch(fetchAllAction)

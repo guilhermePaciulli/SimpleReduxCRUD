@@ -17,9 +17,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="XE6-J1-o18">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="beerCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="beerCell" textLabel="NJq-9F-xBi" detailTextLabel="EXz-JN-NQa" imageView="O9T-L0-Tny" style="IBUITableViewCellStyleSubtitle" id="SLP-4d-VMl">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SLP-4d-VMl" id="4EH-gu-Xff">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -59,6 +64,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="search" destination="XE6-J1-o18" id="Yc7-bZ-Jjk"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lFD-55-MOl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

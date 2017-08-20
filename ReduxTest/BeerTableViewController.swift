@@ -10,15 +10,25 @@ import UIKit
 
 class BeerTableViewController: UITableViewController {
     
+    @IBOutlet weak var search: UISearchBar!
+    
     var beers: [Beer] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.leftBarButtonItem = self.editButtonItem
+        search.delegate = self
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.exitSearchBar))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        var contentOffset = self.tableView.contentOffset
+        contentOffset.y += self.search.frame.height
+        self.tableView.contentOffset = contentOffset
+        
         store.dispatch(FetchAllAction())
         beers = store.state.readingState.beers
         self.tableView.reloadData()
@@ -75,6 +85,30 @@ class BeerTableViewController: UITableViewController {
             inspectViewController.beerTableViewController = self
             inspectViewController.modalTransitionStyle = .crossDissolve
             self.present(inspectViewController, animated: true, completion: nil)
+        }
+    }
+    
+}
+
+extension BeerTableViewController: UISearchBarDelegate {
+    
+    func exitSearchBar() {
+        self.search.endEditing(true)
+    }
+    
+    func searchBy(name: String) {
+        store.dispatch(FetchByNameAction(name: name))
+        beers = store.state.readingState.beers
+        self.tableView.reloadData()
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        searchBy(name: searchText)
+    }
+    
+    func searchBarResultsListButtonClicked(_ searchBar: UISearchBar) {
+        if let searchText = search.text {
+            searchBy(name: searchText)
         }
     }
     
